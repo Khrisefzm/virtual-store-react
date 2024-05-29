@@ -8,7 +8,7 @@ export default function Header() {
         <Link to="/" className={styles["header-logo"]}>
           <img
             className={styles["header-logo-img"]}
-            src="/tiendamia-logo.svg"
+            src="./tiendamia-logo.svg"
             width="218"
             alt="Logo store"
           />
@@ -26,7 +26,7 @@ export default function Header() {
             <a className={styles["header-a"]} href="https://facebook.com">
               <img
                 className={styles["header-social-img"]}
-                src="/facebook.png"
+                src="./facebook.png"
               />
             </a>
           </li>
@@ -34,7 +34,7 @@ export default function Header() {
             <a className={styles["header-a"]} href="https://instagram.com">
               <img
                 className={styles["header-social-img"]}
-                src="/instagram.png"
+                src="./instagram.png"
               />
             </a>
           </li>
@@ -42,7 +42,7 @@ export default function Header() {
             <Link to="/cart" className={styles["header-a"]}>
               <img
                 className={styles["header-social-img"]}
-                src="/shopping-cart.svg"
+                src="./shopping-cart.svg"
               />
             </Link>
           </li>

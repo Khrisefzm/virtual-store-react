@@ -5,11 +5,11 @@ import "./index.css";
 import Home from "./views/Home.tsx";
 import Details from "./views/Details";
 import Cart from "./views/Cart";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import App from "./App.tsx";
 import NotFound from "./views/NotFound.tsx";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <App />,

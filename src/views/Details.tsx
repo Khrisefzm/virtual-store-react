@@ -76,7 +76,7 @@ function Details() {
                   <ul className={styles["checkout-policy-list"]}>
                     <li>
                       <span className={styles["policy-icon"]}>
-                        <img src="/truck.png" alt="Truck" />
+                        <img src="./truck.png" alt="Truck" />
                       </span>
                       <span className={styles["policy-desc"]}>
                         Agrega el producto al carrito para conocer los costos de
@@ -85,7 +85,7 @@ function Details() {
                     </li>
                     <li>
                       <span className={styles["policy-icon"]}>
-                        <img src="/plane.png" alt="Plane" />
+                        <img src="./plane.png" alt="Plane" />
                       </span>
                       <span className={styles["policy-desc"]}>
                         Recibí aproximadamente entre 10 y 15 días hábiles,

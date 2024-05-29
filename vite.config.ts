@@ -4,5 +4,5 @@ import react from "@vitejs/plugin-react";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/virtual-store-react/",
+  base: "https://khrisefzm.github.io/virtual-store-react/",
 });
