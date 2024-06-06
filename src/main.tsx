@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-// import App from "./App.tsx";
 import "./index.css";
 import Home from "./views/Home.tsx";
 import Details from "./views/Details";
@@ -8,6 +7,7 @@ import Cart from "./views/Cart";
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import App from "./App.tsx";
 import NotFound from "./views/NotFound.tsx";
+import Offers from "./views/Offers.tsx";
 
 const router = createHashRouter([
   {
@@ -25,6 +25,10 @@ const router = createHashRouter([
       {
         path: "cart",
         element: <Cart />,
+      },
+      {
+        path: "offers",
+        element: <Offers />,
       },
     ],
   },

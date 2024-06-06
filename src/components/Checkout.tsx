@@ -5,9 +5,10 @@ export default function Checkout({ product }) {
   const cart = JSON.parse(localStorage.getItem("cart") ?? "[]");
   const isInCart = cart.find((productCart) => productCart.id === product.id);
   const defaultButton = isInCart ? true : false;
+  const defaultQuantity = isInCart ? isInCart.quantity : 1;
 
   const [button, setButton] = useState(defaultButton);
-  const [quantity, setQuantity] = useState(1);
+  const [quantity, setQuantity] = useState(defaultQuantity);
 
   function subTotal(e) {
     setQuantity(Number(e.target.value));

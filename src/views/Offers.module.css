@@ -1,0 +1,19 @@
+.sales-block {
+  width: 1080px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0;
+  justify-content: center;
+}
+.sales-title {
+  text-align: center;
+  font-size: 40px;
+}
+.product-container {
+  width: 100%;
+  max-width: 1080px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
