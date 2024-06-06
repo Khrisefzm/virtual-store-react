@@ -32,9 +32,18 @@
   color: #383838;
   margin-bottom: 5px;
 }
+.product-original-price {
+  display: block;
+  font-size: 15px;
+  font-weight: 300;
+  color: grey;
+}
+.label-original-price {
+  text-decoration: line-through;
+}
 .product-price-block {
   display: flex;
-  margin: 5px 0;
+  margin: -5px 0 5px 0;
   justify-content: space-between;
   align-items: center;
 }

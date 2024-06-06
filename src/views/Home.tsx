@@ -18,6 +18,8 @@ function Home() {
                 title={product.title}
                 color={product.colors[0]}
                 price={product.price}
+                onSale={product.onsale}
+                discount={product.discount}
               />
             );
           })}

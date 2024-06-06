@@ -3,7 +3,7 @@ import NavButton from "./NavButton";
 
 function NavBar() {
   const navContent = [
-    { text: "Ofertas", link: "/" },
+    { text: "Ofertas", link: "/Offers" },
     { text: "Cómo comprar", link: "/" },
     { text: "Costos y tarifas", link: "/" },
     { text: "Mis pedidos", link: "/" },
