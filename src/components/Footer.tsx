@@ -90,7 +90,7 @@ function Footer() {
           </li>
         </ul>
       </div>
-      <div className={styles["footer-copyright"]}>Curso de HTML + CSS 2023</div>
+      <div className={styles["footer-copyright"]}>Hecho con Vite + React</div>
     </footer>
   );
 }
