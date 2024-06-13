@@ -1,4 +1,4 @@
-import styles from "./NavBar.module.css";
+// import styles from "./NavBar.module.css";
 import NavButton from "./NavButton";
 
 function NavBar() {
@@ -10,8 +10,8 @@ function NavBar() {
     { text: "Garantía", link: "/" },
   ];
   return (
-    <nav id="navbar">
-      <ul className={styles["nav-ul"]}>
+    <nav id="navbar" className="w-full py-[15px] px-[20px] bg-[#ff3b3c]">
+      <ul className="w-full max-w-[1080px] flex justify-between line-none text-[14px] m-auto">
         {navContent.map((element, key) => (
           <NavButton key={key} text={element.text} link={element.link} />
         ))}

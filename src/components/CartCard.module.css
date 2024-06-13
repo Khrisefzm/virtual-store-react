@@ -19,7 +19,7 @@ main {
   padding: 30px;
   margin: 10px;
   height: 220px;
-  word-wrap: break-word;
+  word-wrap: break-word; /* buscar en estoy */
   display: flex;
   justify-content: space-between;
 }
