@@ -5,10 +5,11 @@ import Thumbs from "../components/Thumbs";
 import Description from "../components/Description";
 import Checkout from "../components/Checkout";
 import OnSale from "../components/OnSale";
+import Product from "../interfaces/Product";
 
 function Details() {
   const { productId } = useParams();
-  const product = products.find((product) => product.id === productId);
+  const product: Product = products.find((product) => product.id === productId);
 
   return (
     <main>

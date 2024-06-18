@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import ProductCartInterface from "../interfaces/ProductCart";
 
 export default function ProductCart({
   id,
@@ -8,7 +9,7 @@ export default function ProductCart({
   price,
   onSale,
   discount,
-}) {
+}: ProductCartInterface) {
   return (
     <Link
       to={`/details/${id}`}

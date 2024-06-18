@@ -1,7 +1,13 @@
 import { useState } from "react";
 import styles from "./Thumbs.module.css";
 
-export default function Thumbs({ images, title }) {
+export default function Thumbs({
+  images,
+  title,
+}: {
+  images: string[];
+  title: string;
+}) {
   const [thumb, setThumb] = useState(images[0] || "/mock1.jpg");
 
   return (

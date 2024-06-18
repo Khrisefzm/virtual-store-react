@@ -1,7 +1,8 @@
 import { useState } from "react";
 import styles from "./Checkout.module.css";
+import Product from "../interfaces/Product";
 
-export default function Checkout({ product }) {
+export default function Checkout({ product }: { product: Product }) {
   const cart = JSON.parse(localStorage.getItem("cart") ?? "[]");
   const isInCart = cart.find((productCart) => productCart.id === product.id);
   const defaultButton = isInCart ? true : false;

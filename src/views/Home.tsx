@@ -1,7 +1,7 @@
-// import styles from "./Home.module.css";
 import products from "../assets/products.js";
 import Hero from "../components/Hero.js";
 import ProductCart from "../components/ProductCart.js";
+import Product from "../interfaces/Product.js";
 
 function Home() {
   return (
@@ -12,7 +12,7 @@ function Home() {
           className="w-[1080px] flex flex-wrap justify-between"
           id="products"
         >
-          {products?.map((product, index) => {
+          {products?.map((product: Product, index: number) => {
             return (
               <ProductCart
                 key={index}
