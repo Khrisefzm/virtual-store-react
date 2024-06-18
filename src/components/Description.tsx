@@ -1,6 +1,14 @@
 import styles from "./Description.module.css";
 
-export default function Description({ title, colors, description }) {
+export default function Description({
+  title,
+  colors,
+  description,
+}: {
+  title: string;
+  colors: string[];
+  description: string;
+}) {
   return (
     <div className={styles["product-description-block"]}>
       <h1 className={styles["product-title"]}>{title}</h1>

@@ -5,10 +5,11 @@ import Thumbs from "../components/Thumbs";
 import Description from "../components/Description";
 import Checkout from "../components/Checkout";
 import OnSale from "../components/OnSale";
+import Product from "../interfaces/Product";
 
 function Details() {
   const { productId } = useParams();
-  const product = products.find((product) => product.id === productId);
+  const product: Product = products.find((product) => product.id === productId);
 
   return (
     <main>
@@ -26,20 +27,6 @@ function Details() {
           <div className={styles["sales-block"]}>
             <h2 className={styles["sales-title"]}>Ofertas de la semana</h2>
             <OnSale />
-            {/* <div id="product-container" className={styles["product-container"]}>
-              {porductsOnSale?.map((product, index) => (
-                <ProductCart
-                  key={index}
-                  id={product.id}
-                  title={product.title}
-                  image={product.images[0]}
-                  color={product.colors[0]}
-                  price={product.price}
-                  onSale={product.onsale}
-                  discount={product.discount}
-                />
-              ))}
-            </div> */}
           </div>
         </div>
       ) : (
